@@ -51,8 +51,8 @@
 @mixin container() {
   position: relative;
   margin: 0 auto;
-  padding-left: $indent;
-  padding-right: $indent;
+  padding-left: 2 * $indent;
+  padding-right: 2 * $indent;
 
   @media (min-width: $bp-middle) {
     padding-left: 1.5 * $indent;
@@ -60,8 +60,8 @@
   }
 
   @media (min-width: $bp-xlarge) {
-    max-width: 1300px;
-    padding-left: 2 * $indent;
-    padding-right: 2 * $indent;
+    max-width: 1200px;
+    padding-left: $indent;
+    padding-right: $indent;
   }
 }

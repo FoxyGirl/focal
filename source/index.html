@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Focal</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      @@include('img/svg-sprite.svg')
+    </div>
+
     <div class="main-wrap">
-      <header class="page-header">header</header>
+      <header class="page-header">
+        <section class="slider">
+          <ul class="slider__list">
+            <li class="slider__item" style="background-image: url('img/slide-1.jpg')">
+              <div class="slider__content">
+                <p>Web &amp; Graphic Designer</p>
+                <a href="" class="btn btn--slider">Learn More</a>
+              </div>
+            </li>
+          </ul>
+          <div class="slider__controls">
+            <a href="" class="slider__control  slider__control--active"></a>
+            <a href="" class="slider__control"></a>
+            <a href="" class="slider__control"></a>
+          </div>
+        </section>
+      </header>
       <main class="page-main">Content
         <p>КУКУ404 error</p>
       </main>
