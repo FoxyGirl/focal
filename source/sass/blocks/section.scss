@@ -1,0 +1,13 @@
+.section {
+  background-color: $color-light-gray;
+
+  &--light {
+    background-color: $color-light;
+  }
+}
+
+.section__inner {
+  @include container;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
