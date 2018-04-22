@@ -1,0 +1,16 @@
+.page-header {
+  color: $color-light;
+  background-color: $color-dark;
+}
+
+.page-header__inner {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+
+  @include respond(mobile) {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,105 @@
+$bp-xsmall: 320px;                // Tiny-screen and old devices;
+$bp-small: 400px;                 // Mobiles and portrait-view tablets
+$bp-sm-middle: 600px;             // Mobiles and portrait-view tablets
+$bp-middle: 768px;                // Normal mobile devices and small tablets;
+$bp-large: 992px;                 // Desktop starts here
+//$bp-xlarge: 1170px + 2 * $indent; // Desktop seamless transition
+$bp-xlarge: 1200px;               // Desktop seamless transition
+
+
+/*==========  Desktop First  ==========*/
+
+@mixin respond($media) {
+
+  // for Large Devices, Wide Screens
+  @if $media == desktop-all {
+    @media only screen and (min-width: $bp-xlarge + 1) {
+      @content;
+    }
+  }
+
+  // for Medium Devices, Desktops
+  @if $media == desktop {
+    @media only screen and (max-width: $bp-xlarge) {
+      @content;
+    }
+  }
+
+  // for Tablets
+  @if $media == tablet {
+    @media only screen and (max-width: $bp-large) {
+      @content;
+    }
+  }
+
+  // for Small Devices
+  @if $media == tablet-small {
+    @media only screen and (max-width: $bp-middle) {
+      @content;
+    }
+  }
+
+  // for Small Devices
+  @if $media == mobile {
+    @media only screen and (max-width: $bp-sm-middle) {
+      @content;
+    }
+  }
+
+  // for Extra Small Devices, Phones
+  @if $media == mobile-small {
+    @media only screen and (max-width: $bp-small) {
+      @content;
+    }
+  }
+}
+
+
+/*==========  Mobile First  ==========*/
+/*
+@mixin respond($media) {
+
+  // for Extra Small Devices, Phones
+  @if $media == mobile-small {
+    @media only screen and (min-width: $bp-xsmall) { @content; }
+  }
+
+  // for Small Devices, Phones
+  @if $media == mobile {
+    @media (min-width: $bp-small) { @content; }
+  }
+
+  // for Small Devices and Small Tablets
+  @if $media == tablet-small {
+    @media (min-width: $bp-sm-middle) { @content; }
+  }
+
+  // for Small Devices and Tablets
+  @if $media == tablet {
+    @media (min-width: $bp-middle) { @content; }
+  }
+
+  // for Medium Devices, Desktops
+  @if $media == desktop {
+    @media (min-width: $bp-large) { @content; }
+  }
+
+  // for Large Devices, Wide Screens)
+  @if $media == desktop-all {
+    @media (min-width: $bp-xlarge) { @content; }
+  }
+}
+*/
+
+@mixin container() {
+  position: relative;
+  margin: 0 auto;
+  max-width: $bp-xlarge;
+  padding-right: $indent;
+  padding-left: $indent;
+  @include clearfix;
+
+  @include respond(tablet) {
+    padding: 0 2*$indent;
+  }
+}

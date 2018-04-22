@@ -14,6 +14,7 @@ body {
   color: $color-text;
   background-color: $color-light;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 * {

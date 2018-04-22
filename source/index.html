@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Focal</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <script>
+      document.documentElement.classList.remove('no-js');
+    </script>
   </head>
   <body>
     <div style="display: none">
@@ -13,22 +16,59 @@
     </div>
 
     <div class="main-wrap">
+
+      <section class="slider">
+        <ul class="slider__list">
+          <li class="slider__item" style="background-image: url('img/slide-1.jpg')">
+            <div class="slider__content">
+              <p>Web &amp; Graphic Designer</p>
+              <a href="" class="btn btn--slider">Learn More</a>
+            </div>
+          </li>
+        </ul>
+        <div class="slider__controls">
+          <a href="" class="slider__control  slider__control--active"></a>
+          <a href="" class="slider__control"></a>
+          <a href="" class="slider__control"></a>
+        </div>
+      </section>
+
       <header class="page-header">
-        <section class="slider">
-          <ul class="slider__list">
-            <li class="slider__item" style="background-image: url('img/slide-1.jpg')">
-              <div class="slider__content">
-                <p>Web &amp; Graphic Designer</p>
-                <a href="" class="btn btn--slider">Learn More</a>
-              </div>
-            </li>
-          </ul>
-          <div class="slider__controls">
-            <a href="" class="slider__control  slider__control--active"></a>
-            <a href="" class="slider__control"></a>
-            <a href="" class="slider__control"></a>
-          </div>
-        </section>
+        <div class="page-header__inner">
+          <a class="logo">
+            <img src="img/logo-focal.png" alt="Logo Focal">
+            <div class="logo__text">Fo<span class="logo__text logo__text--color">cal</span></div>
+          </a>
+          <nav class="main-nav" id="mainNav">
+            <button class="main-nav__toggler" type="button" id="navToggler">
+              <span>Открыть меню</span>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link  main-nav__link--active" href="#" >Home</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#" >About Me</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#" >Skills</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#" >Resume</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#" >Testimonials</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#" >Portfolio</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#" >Contact Me</a>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
       </header>
       <main class="page-main">Content
         <p>КУКУ404 error</p>
@@ -41,5 +81,6 @@
       <p>Footer</p>
 
     </footer>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>

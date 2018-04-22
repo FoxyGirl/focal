@@ -1,7 +1,10 @@
 @import "global/fonts";
 @import "global/variables";
 @import "global/mixins";
+@import "global/mixins-respond";
 @import "global/commons";
-
 @import "blocks/slider";
 @import "blocks/btn";
+@import "blocks/page-header";
+@import "blocks/logo";
+@import "blocks/main-nav";
