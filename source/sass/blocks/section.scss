@@ -4,6 +4,22 @@
   &--light {
     background-color: $color-light;
   }
+
+  &--photo {
+    position: relative;
+    background: $color-light-gray url("../img/photo-side.jpg") 0 0 no-repeat;
+    background-size: 38.125% auto; /* 610 / 1600 */
+
+    &::before {
+      //content: url("../img/photo-side.jpg");
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      margin-right: 90px;
+    }
+  }
 }
 
 .section__inner {
