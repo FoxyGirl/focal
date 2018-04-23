@@ -13,15 +13,17 @@
   background-color: transparent;
   border: 2px solid $color-main;
   outline: none;
+  transition: all 0.3s;
 
   &:hover,
   &:focus,
   &:active {
-    background-color: $color-secondary;
+    color: $color-light;
+    background-color: $color-main;
   }
 
   &:active {
-    color: rgba($color-light, 0.3);
+    opacity: 0.5;
   }
 
   &--slider {
@@ -29,16 +31,16 @@
     color: $color-light;
     border-color: $color-light;
 
-
     &:hover,
-    &:focus,
-    &:active {
-      background-color: $color-gray;
+    &:focus {
+      color: $color-main;
+      background-color: rgba($color-gray, 0.7);
+      border-color: $color-main;
     }
+  }
 
-    &:active {
-      color: rgba($color-dark, 0.3);
-    }
+  &--contact {
+    margin-top: 60px;
   }
 }
 /*

@@ -10,3 +10,13 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+@include respond(mobile) {
+  .points {
+    display: block;
+  }
+
+  .points__item {
+    width: 100%;
+  }
+}

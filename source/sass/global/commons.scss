@@ -70,11 +70,24 @@ img {
 }
 
 .text {
+  margin-top: 0;
   font-size: 18px;
   line-height: 1.6;
+
+  & + & {
+    margin-top: 30px;
+  }
 }
 
+.col-2 {
+  width: 45%;
+  flex-shrink: 0;
+  //outline: 1px solid red;
 
+  @include respond(mobile) {
+    width: 100%;
+  }
+}
 
 /**
  * Correct `block` display not defined for any HTML5 element in IE 8/9.

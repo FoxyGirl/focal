@@ -26,4 +26,18 @@
   @include container;
   padding-top: 90px;
   padding-bottom: 90px;
+
+  &--multicolumn {
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      content: none;
+    }
+
+    @include respond(mobile) {
+      display: block;
+    }
+  }
+
 }

@@ -1,0 +1,54 @@
+.skills__list {
+  @include ul-clear;
+}
+
+.skills__item {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.skill__name {
+  margin-bottom: 18px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.skill__bar {
+  position: relative;
+  height: 30px;
+  background-color: $color-light-gray;
+}
+
+.skill__proc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 90%;
+  background-color: $color-main;
+}
+
+.skill__val {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: 18px;
+  color: $color-light;
+
+  &::before {
+    content: attr(data-val);
+  }
+}
+
+@include respond(mobile) {
+  .skills {
+    margin-top: 60px;
+  }
+}
