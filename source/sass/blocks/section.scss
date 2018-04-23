@@ -20,6 +20,27 @@
       margin-right: 90px;
     }
   }
+
+
+  &--resume {
+    position: relative;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -19px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      @include css-triangle(bottom, $color-light-gray, 20px, 60px);
+    }
+
+    .title,
+    .text {
+      text-align: center;
+    }
+  }
 }
 
 .section__inner {
@@ -39,5 +60,4 @@
       display: block;
     }
   }
-
 }
