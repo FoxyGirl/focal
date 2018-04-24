@@ -82,7 +82,6 @@ img {
 .col-2 {
   width: 45%;
   flex-shrink: 0;
-  //outline: 1px solid red;
 
   @include respond(mobile) {
     width: 100%;
