@@ -59,6 +59,10 @@ img {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
+
+  &--portfolio {
+    text-align: center;
+  }
 }
 
 .subtitle {
@@ -76,6 +80,10 @@ img {
 
   & + & {
     margin-top: 30px;
+  }
+
+  &--portfolio {
+    text-align: center;
   }
 }
 
