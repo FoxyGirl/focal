@@ -1,6 +1,11 @@
 .main-form {
   width: 100%;
 
+  @include respond(tablet-small) {
+    clear: both;
+    padding-top: 40px;
+  }
+
   input,
   textarea {
     width: 100%;

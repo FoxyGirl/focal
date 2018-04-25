@@ -8,7 +8,7 @@
     border-top: 1px solid #cccccc;
   }
 
-  @include respond(mobile) {
+  @include respond(tablet-small) {
     display: block;
   }
 }

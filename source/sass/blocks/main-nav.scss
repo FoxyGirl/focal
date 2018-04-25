@@ -1,7 +1,10 @@
 .main-nav {
   position: relative;
   flex-grow: 1;
-  top: -13px;
+
+  @include respond(tablet) {
+    top: -13px;
+  }
 }
 
 .main-nav__toggler {
@@ -19,10 +22,16 @@
 .main-nav__item {
   margin: 0 10px;
   text-align: center;
+  transition: margin 0.3s;
 
   &:last-child {
     margin-right: 0;
     padding-right: 0;
+  }
+
+
+  @media (max-width: 1020px) {
+    margin: 0 5px;
   }
 }
 

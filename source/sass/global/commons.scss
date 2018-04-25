@@ -94,6 +94,11 @@ img {
     span {
       display: block;
     }
+
+    @include respond(tablet-small) {
+      width: 40%;
+      float: left;
+    }
   }
 
   &--contact {
@@ -108,6 +113,11 @@ img {
         width: 95px;
         color: $color-light;
       }
+    }
+
+    @include respond(tablet-small) {
+      width: 40%;
+      float: right;
     }
   }
 }
