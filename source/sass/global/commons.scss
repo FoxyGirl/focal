@@ -67,6 +67,11 @@ img {
   &--footer {
     color: $color-light;
   }
+
+  @include respond(tablet-small) {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 }
 
 .subtitle {
@@ -75,6 +80,11 @@ img {
   font-weight: 700;
   font-size: 22px;
   text-transform: uppercase;
+
+  @include respond(tablet-small) {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
 }
 
 .text {
@@ -119,6 +129,10 @@ img {
       width: 40%;
       float: right;
     }
+  }
+
+  @include respond(tablet-small) {
+    font-size: 16px;
   }
 }
 

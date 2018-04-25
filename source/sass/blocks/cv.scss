@@ -10,6 +10,11 @@
 
   @include respond(tablet-small) {
     display: block;
+    padding-bottom: 20px;
+  }
+
+  @include respond(tablet-small) {
+    padding-bottom: 0;
   }
 }
 
@@ -31,6 +36,10 @@
 .cv__option {
   font-size: 18px;
   font-weight: 400;
+
+  @include respond(tablet-small) {
+    font-size: 16px;
+  }
 
   span {
     font-weight: 500;

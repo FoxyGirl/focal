@@ -3,12 +3,18 @@
   display: flex;
   margin-right: -$indent;
   margin-left: -$indent;
+
+  @include respond(tablet) {
+    flex-wrap: wrap;
+  }
 }
 
 .points__item {
   flex: 1 1 0;
+  min-width: 300px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 30px;
 }
 
 @include respond(mobile) {

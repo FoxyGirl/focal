@@ -15,6 +15,14 @@
   padding-left: 40px;
   margin-bottom: 40px;
 
+  @include respond(tablet) {
+    width: 50%;
+  }
+
+  @include respond(mobile) {
+    width: 100%;
+  }
+
   &--controls {
     .portfolio__content {
       background-color: #333333;

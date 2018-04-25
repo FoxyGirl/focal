@@ -15,6 +15,11 @@
   outline: none;
   transition: all 0.3s;
 
+
+  @include respond(tablet-small) {
+    font-size: 16px;
+  }
+
   &:hover,
   &:focus,
   &:active {
@@ -41,22 +46,19 @@
 
   &--contact {
     margin-top: 60px;
+
+    @include respond(tablet-small) {
+      margin-top: 30px;
+    }
   }
 
   &--resume {
     margin-top: 40px;
-  }
-}
-/*
-@media (min-width: $bp-middle) {
-  .btn {
-    font-size: 16px;
 
-    &--form {
-      font-size: 20px;
-      padding-top: 12px;
-      padding-bottom: 12px;
+    @include respond(tablet-small) {
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
 }
-*/
+

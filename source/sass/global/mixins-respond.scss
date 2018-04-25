@@ -100,6 +100,10 @@ $bp-xlarge: 1200px;               // Desktop seamless transition
   @include clearfix;
 
   @include respond(tablet) {
+    padding: 4*$indent;
+  }
+
+  @include respond(mobile) {
     padding: 2*$indent;
   }
 }

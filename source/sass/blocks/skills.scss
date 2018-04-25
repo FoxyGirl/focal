@@ -51,8 +51,13 @@
   }
 }
 
-@include respond(mobile) {
+@include respond(tablet-small) {
   .skills {
     padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .skill__name {
+    margin-bottom: 10px;
   }
 }
