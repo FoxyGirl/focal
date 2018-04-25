@@ -23,25 +23,25 @@
     top: 10px;
     width: 46px;
     height: 46px;
-    background: transparent url("../img/svg-icons/icon-web-design.svg") center no-repeat;
+    background: transparent url("../img/icon-web-design.svg") center no-repeat;
     background-size: contain;
   }
 
   &--graphic {
     &::before {
-      background-image: url("../img/svg-icons/icon-graphic-design.svg");
+      background-image: url("../img/icon-graphic-design.svg");
     }
   }
 
   &--marketing {
     &::before {
-      background-image: url("../img/svg-icons/icon-marketing.svg");
+      background-image: url("../img/icon-marketing.svg");
     }
   }
 
   &--seo {
     &::before {
-      background-image: url("../img/svg-icons/icon-seo.svg");
+      background-image: url("../img/icon-seo.svg");
     }
   }
 }

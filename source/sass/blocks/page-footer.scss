@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: $color-dark;
+}
+
+.page-footer__inner {
+  @include container;
+  display: flex;
+  padding-top: 90px;
+}

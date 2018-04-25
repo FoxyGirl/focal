@@ -63,6 +63,10 @@ img {
   &--portfolio {
     text-align: center;
   }
+
+  &--footer {
+    color: $color-light;
+  }
 }
 
 .subtitle {
@@ -84,6 +88,27 @@ img {
 
   &--portfolio {
     text-align: center;
+  }
+
+  &--address {
+    span {
+      display: block;
+    }
+  }
+
+  &--contact {
+    a {
+      display: block;
+      text-decoration: none;
+      color: $color-text;
+
+      span {
+        display: inline-block;
+        vertical-align: baseline;
+        width: 95px;
+        color: $color-light;
+      }
+    }
   }
 }
 
