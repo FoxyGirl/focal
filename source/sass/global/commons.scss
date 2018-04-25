@@ -116,7 +116,7 @@ img {
   width: 45%;
   flex-shrink: 0;
 
-  @include respond(mobile) {
+  @include respond(tablet-small) {
     width: 100%;
   }
 }

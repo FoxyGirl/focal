@@ -5,5 +5,10 @@
 .page-footer__inner {
   @include container;
   display: flex;
+  justify-content: space-between;
   padding-top: 90px;
+
+  @include respond(tablet-small) {
+    display: block;
+  }
 }

@@ -1,0 +1,29 @@
+.main-form {
+  width: 100%;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: $color-light;
+    background-color: $color-gray;
+    outline: none;
+    border: none;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}
+
+.main-form__item {
+  margin-bottom: 30px;
+}
+
+.main-form__label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: $color-text;
+}

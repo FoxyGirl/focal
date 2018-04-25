@@ -46,6 +46,7 @@
     font-size: 60px;
     font-weight: 700;
     text-transform: uppercase;
+    text-shadow: 1px 1px 10px rgba(#000, 0.75);
     border-top: 2px solid $color-light;
     border-bottom: 2px solid $color-light;
   }
@@ -68,10 +69,6 @@
     .slider__control {
       margin: 0 5px;
       border-color: $color-main;
-
-      &:last-child {
-        //margin-top: 0;
-      }
 
       &--active {
         background-color: $color-main;
