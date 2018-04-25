@@ -10,6 +10,11 @@
     background: $color-light-gray url("../img/photo-side.jpg") 0 0 no-repeat;
     background-size: 38.125% auto; /* 610 / 1600 */
 
+    @media (max-width: 780px) {
+      background-color: $color-light-gray;
+      background-image: none;
+    }
+
     &::before {
       //content: url("../img/photo-side.jpg");
       position: relative;
